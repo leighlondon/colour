@@ -12,9 +12,8 @@
  *      \/__/       \/__/       \/__/       \/__/       \/__/       \/__/
  */
 (() => {
-
   function zeropad(n) {
-    return n < 10 ? '0' + n : '' + n;
+    return n < 10 ? "0" + n : n;
   }
 
   function to_hms(date) {
@@ -26,8 +25,8 @@
 
   function tick() {
     let hms = to_hms(new Date());
-    document.getElementById("timestamp").innerText = hms.join(':');
-    document.body.style.backgroundColor = hms.join('');
+    document.getElementById("timestamp").innerText = hms.join(":");
+    document.body.style.backgroundColor = hms.join("");
   }
 
   function main() {
