@@ -1,4 +1,4 @@
-# colours
+# colour
 
 Stop, colour time.
 
