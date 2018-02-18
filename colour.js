@@ -26,7 +26,7 @@
   function tick() {
     let hms = to_hms(new Date());
     document.getElementById("timestamp").innerText = hms.join(":");
-    document.body.style.backgroundColor = hms.join("");
+    document.body.style.backgroundColor = "#" + hms.join("");
   }
 
   function main() {
