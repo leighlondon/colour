@@ -30,6 +30,7 @@
   }
 
   function main() {
+    tick();
     setInterval(tick, 1000);
   }
   main();
