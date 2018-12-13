@@ -25,8 +25,11 @@
 
   const tick = () => {
     let hms = to_hms(new Date());
+    let colour = "#" + hms.join("");
+    let meta = document.querySelector("meta[name=theme-color]");
+    if (meta !== null ) meta.setAttribute("content", colour);
+    document.body.style.backgroundColor = colour;
     document.getElementById("timestamp").innerText = hms.join(":");
-    document.body.style.backgroundColor = "#" + hms.join("");
   };
 
   const main = () => {
